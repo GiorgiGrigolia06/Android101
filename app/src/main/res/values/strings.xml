@@ -42,9 +42,8 @@
     </string>
     <string name="abstraction_title">Abstraction</string>
 
-    <string name="abstract_vs_interface_question">Abstract class VS Interface</string>
-    <string name="abstract_vs_interface_answer">
-        In Kotlin, the main differences between abstract classes and interfaces are:\n\nConstructor: Abstract classes can have constructors, allowing you to perform object initialization during subclass instantiation.
+    <string name="abstract_vs_interface_question">Abstract Class VS Interface</string>
+    <string name="abstract_vs_interface_answer">In Kotlin, the main differences between abstract classes and interfaces are:\n\nConstructor: Abstract classes can have constructors, allowing you to perform object initialization during subclass instantiation.
         Interfaces do not have constructors, as they cannot be directly instantiated.\n\nFields (Properties): Abstract classes can have properties with defined values, which can be private, protected, internal,
         or public. In contrast, interfaces declare properties as abstract, meaning they do not provide default values and must be
         implemented by classes that implement the interface.\n\nMethods: Abstract classes can define both abstract (unimplemented) and concrete (implemented) methods.
@@ -64,7 +63,7 @@
         Interfaces define contracts that classes can adhere to, allowing multiple classes to implement the same set
         of methods and properties with flexibility in providing their own implementations when necessary.
     </string>
-    <string name="abstract_vs_interface_title">Abstract VS Interface</string>
+    <string name="abstract_vs_interface_title">Abstract Class VS Interface</string>
 
     <string name="activity_question">What is Activity?</string>
     <string name="activity_answer">Activity is an app component that contains user interface (UI) and represents the app screen.</string>
