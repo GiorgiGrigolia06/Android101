@@ -6,5 +6,5 @@ I wanted to share some of the text resources I have with a friend who's interest
     <img src="Preview Images/Android101[1].png" alt="Main Page [1]" width="220" height="460">&nbsp;&nbsp;
     <img src="Preview Images/Android101[2].png" alt="Main Page [2]" width="220" height="460">&nbsp;&nbsp;
     <img src="Preview Images/Android101[3].png" alt="Content Page [1]" width="220" height="460">&nbsp;&nbsp;
-    <img src="Preview Images/Android101[4].png" alt="Content Page [2]" width="220" height="460">&nbsp;&nbsp;
+    <img src="Preview Images/Android101[3].png" alt="Content Page [2]" width="220" height="460">&nbsp;&nbsp;
 </p>
