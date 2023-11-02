@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Android 101</string>
+
+    <string name="class_question">What is a Class?</string>
+    <string name="class_answer">
+        A class is a blueprint in object-oriented programming that defines a structure for creating objects.\n\nIt encapsulates data (properties) and behaviors (methods) that describe the characteristics and actions of objects instantiated from that class.</string>
+    <string name="class_title">Class</string>
+
+    <string name="inheritance_question">What is Inheritance?</string>
+    <string name="inheritance_answer">Inheritance allows you to create a new class (subclass or derived class) that
+        inherits properties and behaviors (attributes and methods) from an existing class (superclass or base class).
+        \n\nIt promotes code reuse and establishes an \"is-a\" relationship between classes.
+    </string>
+    <string name="inheritance_title">Inheritance</string>
+
+    <string name="encapsulation_question">What is Encapsulation?</string>
+    <string name="encapsulation_answer">
+        Encapsulation is one of the core principles of object-oriented programming
+        (OOP) that involves bundling data (attributes or properties) and methods (functions) that operate on
+        that data into a single unit, called a class.\n\nIt restricts direct access to some of the object\'s components,
+        providing control over the data\'s integrity and accessibility. Access to the data is controlled through methods,
+        which are often referred to as getter and setter methods.
+    </string>
+    <string name="encapsulation_title">Encapsulation</string>
+
+    <string name="polymorphism_question">What is Polymorphism?</string>
+    <string name="polymorphism_answer">
+        Polymorphism enables objects of different classes to be treated as objects of a common superclass.
+        It allows you to write code that can work with objects of multiple related classes in a more generic way.
+        Polymorphism can take the form of method overriding or method overloading.\n\nMethod overloading occurs when multiple methods in the same class have the same name but different parameter lists.
+        \n\nOverloaded methods may or may not have the same return type. Overloaded methods can have different access
+        modifiers (public, private, protected, etc.) within the same class.\n\nMethod overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass.
+        \n\nThe method in the subclass must have the same name, return type, and parameter list (method signature) as the one in the superclass.
+    </string>
+    <string name="polymorphism_title">Polymorphism</string>
+
+    <string name="abstraction_question">What is Abstraction?</string>
+    <string name="abstraction_answer">
+        Abstraction allows you to simplify complex systems by modeling classes
+        based on their essential properties and behaviors while hiding the less relevant details.
+        \n\nIn Kotlin, abstraction is achieved through the use of abstract classes and interfaces.
+    </string>
+    <string name="abstraction_title">Abstraction</string>
+
+    <string name="abstract_vs_interface_question">Abstract class VS Interface</string>
+    <string name="abstract_vs_interface_answer">
+        In Kotlin, the main differences between abstract classes and interfaces are:\n\nConstructor: Abstract classes can have constructors, allowing you to perform object initialization during subclass instantiation.
+        Interfaces do not have constructors, as they cannot be directly instantiated.\n\nFields (Properties): Abstract classes can have properties with defined values, which can be private, protected, internal,
+        or public. In contrast, interfaces declare properties as abstract, meaning they do not provide default values and must be
+        implemented by classes that implement the interface.\n\nMethods: Abstract classes can define both abstract (unimplemented) and concrete (implemented) methods.
+        Subclasses can choose to override or use concrete methods as needed.
+        Interfaces can define both abstract methods (which must be implemented by implementing classes)
+        and default methods (which can be used as-is or overridden by implementing classes).
+        Default methods have an implementation in the interface itself, and classes implementing the
+        interface can choose to use them as-is or override them. This provides a way to add methods
+        to an interface without breaking existing implementations.\n\nInheritance: A class can inherit from only one abstract class, providing a form of single
+        inheritance when it comes to implementation. When a class inherits from an abstract class, it\'s
+        like sitting in a single teacher\'s class. You can learn from that teacher only.
+        This is like having one main source of knowledge and it\'s called "single inheritance."\n\nIn contrast, a class can implement multiple interfaces, allowing it to adhere to multiple method
+        contracts. When a class implements multiple interfaces, it\'s like being part of many different clubs,
+        each with its own set of activities and rules. You can follow the rules of each club and be part of several clubs at
+        the same time. This is like having multiple ways to do things. It\'s called "multiple inheritance" in terms of following rules or methods.\n\nIn summary, abstract classes are used when you want to create a common base class with shared implementation and
+        properties, and subclasses can choose whether to override methods or use the provided implementations.
+        Interfaces define contracts that classes can adhere to, allowing multiple classes to implement the same set
+        of methods and properties with flexibility in providing their own implementations when necessary.
+    </string>
+    <string name="abstract_vs_interface_title">Abstract VS Interface</string>
+
+    <string name="activity_question">What is Activity?</string>
+    <string name="activity_answer">Activity is an app component that contains user interface (UI) and represents the app screen.</string>
+    <string name="activity_title">Activity</string>
+
+    <string name="main_activity_question">What is MainActivity?</string>
+    <string name="main_activity_answer">First screen that appears after an app is launched is known as MainActivity.</string>
+    <string name="main_activity_title">MainActivity</string>
+
+    <string name="manifest_question">What is Manifest?</string>
+    <string name="manifest_answer">Manifest is a file which declares all components and permissions of the application.</string>
+    <string name="manifest_title">Manifest</string>
+
+    <string name="view_question">What is View?</string>
+    <string name="view_answer">
+        In the Android SDK, a View is represented with a class named View. 
+        It\'s a parent class of all kinds of Views. It defines a basic building block for any user interface, 
+        component, or element.\n\nAll the classes that represent specific UI elements inherit from View.
+        For example, TextView, TextField, Button, and ImageView, to name a few.
+    </string>
+    <string name="view_title">View</string>
+
+    <string name="ui_question">What is User Interface (UI)?</string>
+    <string name="ui_answer">
+        User interface is a collection of Views organized or laid out in a well-defined manner.
+        For a proper organization, Views need to be grouped and contained together.
+    </string>
+    <string name="ui_title">User Interface (UI)</string>
+
+    <string name="view_group_question">What is a View Group?</string>
+    <string name="view_group_answer">
+        View Groups are special Views that do not have an appearance of their own. 
+        They are invisible UI elements which act as a container to other Views or ViewGroups.\n\nSome common ViewGroups include LinearLayout, RelativeLayout, and GridLayout.\n\nRelativeLayout specifies the position of contained views relative to each other. For example, you can place a view to the left or place it below another view.\n\nLinearLayout linearly organizes the contained views horizontally or vertically as a single row or a single column respectively.
+    </string>
+    <string name="view_group_title">View Group</string>
+
+    <string name="lifecycle_question">What is Lifecycle?</string>
+    <string name="lifecycle_answer">
+        Lifecycle refers to the states a computer program goes through from initial 
+        creation to execution and eventually termination.
+    </string>
+    <string name="lifecycle_title">Lifecycle</string>
+
+    <string name="activity_lifecycle_question">What is Activity Lifecycle?</string>
+    <string name="activity_lifecycle_answer">
+        Similarly to Lifecycle, an Activity Lifecycle refers to different stages or states. 
+        The activity instance goes through from the moment an app starts until it exits or gets terminated.\n\nExample:\n\n1) Launch - Created (builds UI).\n2) Started - is visible.\n3) Resumed - gains focus and user can interact.\n4) Paused - user stops using app.\n5) Stopped - no longer visible in the foreground.\n6) Destroyed.
+    </string>
+    <string name="activity_lifecycle_title">Activity Lifecycle</string>
+
+    <string name="lifecycle_callbacks_question">What are lifecycle callbacks?</string>
+    <string name="lifecycle_callbacks_answer">
+        onCreate() -> Basic startup routine (loading initial data, building UI, restoring configuration).\n\nonStart() -> First visible to the user.\n\nonResume() -> Activity is on foreground. App is waiting for the user action.\n\nonPause() -> Activity loses focus (user is leaving activity or some other activity).\n\nonStop() -> Activity completely loses visibility (user switched to a new activity, moved to the devices home screen, or turned off the screen).\n\nonDestroy() -> User completely dismisses the app or screen orientation is changed (configuration change).
+    </string>
+    <string name="lifecycle_callbacks_title">Lifecycle Callbacks</string>
+    
+    <string name="imperative_approach_question">What is an Imperative approach to UI development?</string>
+    <string name="imperative_approach_answer">
+        The Imperative approach to UI development requires that you define step-by-step how to build
+        the UI (define Views in xml, focus on what they should look like, when data changes define logic again to update the UI).\n\nThis process can quickly become complex when changes are frequent or when several views need to be updated consistently.\n\nIt can even become more complex when the activity lifecycle events happen, where the activity may pause or need to be restarted or recreated.
+    </string>
+    <string name="imperative_approach_title">Imperative Approach</string>
+    
+    <string name="declarative_approach_question">What is a Declarative approach to UI development?</string>
+    <string name="declarative_approach_answer">
+        The Declarative approach focuses on what rather than how.
+        You give priority to what you have to show, meaning the data.
+        You pass in the data to the declarative system and it gives you a UI displaying that data.\n\nYou have to define individual UI elements and organize them.\n\nIt requires dynamic definition, is data dependent.\n\nWe can say that UI is the function of the data.\n
+    </string>
+    <string name="declarative_approach_title">Declarative Approach</string>
+
+    <string name="imperative_vs_declarative_question">Imperative VS Declarative</string>
+    <string name="imperative_vs_declarative_answer">
+        The imperative approach to UI development requires that you define step-by-step how to build the UI.\n\nThe declarative approach, on the other hand, focuses on what rather than how.You give priority to what you have to show, meaning the data.
+    </string>
+    <string name="imperative_vs_declarative_title">Imperative VS Declarative</string>
+    
+    <string name="annotations_question">What are Annotations?</string>
+    <string name="annotations_answer">
+        Annotations in Kotlin are a powerful language feature that allows developers to
+        add metadata to their code that can be used to provide additional information and control the behavior of the code.
+        This metadata can be used when the code is compiled or, while the code is running.\n\nAnnotations can be used to specify behavior, improve IDE code completion,
+        provide information to libraries and frameworks or control compilation.\n\nAnnotations can also be used to document
+        code by providing additional information about the code.\n\nTo add an annotation, the @ symbol is used followed by the annotation type.
+    </string>
+    <string name="annotations_title">Annotations</string>
+
+    <string name="event_question">What is an Event?</string>
+    <string name="event_answer">
+        In programming, you call a user action an event. Tapping or clicking a button, scrolling a list, swiping, dragging,
+        long pressing are all examples of user events.
+    </string>
+    <string name="event_title">Event</string>
+</resources>
+
+

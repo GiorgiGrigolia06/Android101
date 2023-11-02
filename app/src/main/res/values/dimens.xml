@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_vertical_padding">20dp</dimen>
+    <dimen name="lazy_column_horizontal_padding">20dp</dimen>
+    <dimen name="list_item_shadow_elevation">5dp</dimen>
+    <dimen name="answer_screen_padding">20dp</dimen>
+</resources>
