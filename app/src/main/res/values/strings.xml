@@ -157,6 +157,92 @@
         long pressing are all examples of user events.
     </string>
     <string name="event_title">Event</string>
+
+    <string name="handling_event_question">What it means to handle an event?</string>
+    <string name="handling_event_answer">Your response to an event, executing code or a function, when an event occurs is called handling the event. This kind of a function is known as a callback function.\n\nExamples:\nHandle click or tap by showing a dialogue box.\nScrolling a list by displaying new list items.\nLong press on the home screen to select an icon.</string>
+    <string name="handling_event_title">Handling the Event</string>
+    
+    <string name="state_question">What is State?</string>
+    <string name="state_answer">In programming, State is generally referred to as the data or some piece of information of a program that can change over time. It may also refer to a current snapshot or condition of a program which can be described as using a collection of data within a program\'s execution</string>
+    <string name="state_title">State</string>
+    
+    <string name="recomposition_question">What is Recomposition?</string>
+    <string name="recomposition_answer">Recomposition is the process of updating the UI (composable) whenever the state changes.</string>
+    <string name="recomposition_title">Recomposition</string>
+    
+    <string name="nav_graph_question">What is NavGraph?</string>
+    <string name="nav_graph_answer">NavGraph provides the paths to the destination from the starting destination. In other words, NavGraph is a collection of navigable destinations.\n\nAdditionally, NavGraph is provided to NavHost for building the graph. Each composable destination corresponds to a root in the navigation graph.\n\nThe root is a unique string for every destination.</string>
+    <string name="nav_graph_title">NavGraph</string>
+    
+    <string name="nav_controller_question">What is NavController?</string>
+    <string name="nav_controller_answer">NavController is an essential component for navigation that manages the back stack.\n\nNavController is responsible for navigating between destinations while keeping track and manipulating the back stack. It should be placed at the top level of the composable hierarchy and passed to only those composable functions that require navigation.</string>
+    <string name="nav_controller_title">NavController</string>
+
+    <string name="nav_host_question">What is NavHost?</string>
+    <string name="nav_host_answer">NavHost acts as a container for displaying the current destination. It takes the NavController as an input parameter and associates it with the NavGraph, which contains the destinations which can be navigated.\n\nThe content of NavHost is automatically recomposed during the navigation. Every NavHost must be associated with a single NavController.</string>
+    <string name="nav_host_title">NavHost</string>
+
+    <string name="singleton_question">What is Singleton?</string>
+    <string name="singleton_answer">Singleton is an object-oriented pattern where a class can have only one object at a time.\n\nSuch an object can be declared using the keyword \"Object\" instead of first creating a class and then creating an instance of the created class.\n\nA singleton object can inherit another class or interface.</string>
+    <string name="singleton_title">Singleton</string>
+
+    <string name="companion_object_question">What is Companion Object?</string>
+    <string name="companion_object_answer">In Kotlin a Companion Object is an object that is associated with a class. A class can only have one companion object.\n\nCompanion objects can be used to store static members of the class or to provide factory methods for creating instances of the class.</string>
+    <string name="companion_object_title">Companion Object</string>
+
+    <string name="inner_classes_question">What are Inner Classes?</string>
+    <string name="inner_classes_answer">In Kotlin, you can define classes within classes to logically group classes that are to be used in one place.\n\nThis allows you to have more readable code and increases encapsulation by restricting direct access to the class defined within another class and enforcing the outer class to be used.\n\nThe three terms to describe the position of a class are:\n\nNested: A class defined within a class is called a nested class.\n\nInner: A nested class marked with the keyword ‘inner’ is called an inner class.\n\nOuter: The class which contains the nested or inner class is known as an outer class.\n\nNote: The nested class cannot access the members of the outer class, but the outer class can access the members of the nested class.\n\nIt may sometimes be required that the nested class should be able to access members of the outer class.\n\nKotlin provides a keyword inner which when added to a nested class allows it to access the members of the outer class.</string>
+    <string name="inner_classes_title">Inner Classes</string>
+    
+    <string name="extension_functions_question">What are Extension Functions?</string>
+    <string name="extension_functions_answer">Whenever you need to extend the functionalities of a class or an interface and an external or a third party library that you can not inherit from or modify, you use extension functions.\n\nThe extension function is a powerful feature of Kotlin because it allows you to add extra functionality to an existing class, even if you don\'t have access to its source code.</string>
+    <string name="extension_functions_title">Extension Functions</string>
+    
+    <string name="functional_testing_question">What is Functional Testing?</string>
+    <string name="functional_testing_answer">Functional Testing deals with testing the functional aspects of a software application. It aims at validating and verifying the correctness and completeness of a software application.\n\nThese tests can be either run manually or using automation tools.\n\nThere are three types of Functional Testing:\n\nUnit Testing, Integration Testing, and End-To-End Testing.</string>
+    <string name="functional_testing_title">Functional Testing</string>
+    
+    <string name="non_functional_testing_question">What is Non-Functional Testing?</string>
+    <string name="non_functional_testing_answer">Non-Functional Testing deals with testing software applications in terms of non-functional aspects such as reliability, scaling, performance, security, and so forth.\n\nNon-Functional Testing assesses application properties that aren’t critical to functionality but contribute to the end-user experience.\n\nGenerally, Non-Functional Testing is done after Functional Testing and it’s usually completed using automation tools.</string>
+    <string name="non_functional_testing_title">Non-Functional Testing</string>
+    
+    <string name="unit_testing_question">What is Unit Testing?</string>
+    <string name="unit_testing_answer">Unit Testing is the most common testing where individual units or components of a software application are tested.\n\nThe small part of code that is being tested is called unit under test. This type of testing aims to verify the correctness of small functionalities in code such as that of objects, functions, modules, and so forth.\n\nThe general practice of writing a good unit test involves three parts: arrange, act, and assert.\n\nThe first step, arrange suggests that you should arrange data and initialize the objects required to be fed as input into the functionality under test.\n\nThe second step, act, performs an action by executing the functionality under test while passing the data arranged in the first step.\n\nThe last and final step, assert, verifies and asserts that the data received as output by executing the functionality under test in the second step matches the expected output of the test. If the data matches then the test has successfully passed. Otherwise, the test fails.</string>
+    <string name="unit_testing_title">Unit Testing</string>
+    
+    <string name="integration_testing_question">What is Integration Testing?</string>
+    <string name="integration_testing_answer">Integration Testing is aimed at testing whether different modules or services are working properly with each other.\n\nTake the case of the food delivery app. An example of integration testing is to test whether the delivery service provider integrates and works correctly with the payment service.\n\nCompared to unit tests, integration tests are generally more expensive to run since they require several parts of software applications to be working together.</string>
+    <string name="integration_testing_title">Integration Testing</string>
+    
+    <string name="end_to_end_testing_question">What is End-To-End Testing?</string>
+    <string name="end_to_end_testing_answer">End-to-end Testing is a testing methodology that consists of testing a software application\'s workflow from the start to the end by emulating a real-world scenario.\n\nThis type of test replicates user interactions and behavior with a software application to test the application behavior and verify whether the actual output matches the expected output.\n\nIn the food delivery app, an end-to-end test may consist of mimicking user interactions with the app. That could include a search for items that can be delivered, short listing the list of items to be delivered, entering payment details, processing the details, and finally, placing the order.\n\nEnd-to-end testing is very useful, but it is a far more expensive test to run than unit or integration testing.\n\nIn addition, they are harder to maintain since software application requirements often change, causing a redesign of the test.</string>
+    <string name="end_to_end_testing_title">End-To-End Testing</string>
+    
+    <string name="fakes_question">What are Fakes?</string>
+    <string name="fakes_answer">Fakes are simplified implementations of interfaces designed to support certain test scenarios. They allow you to test your class under test in given scenarios without having to figure out how to get a dependency to the right state for the test.\n\nFakes are easy to instantiate and reason with. They are predictable and fast.\n\nAll of these are critical characteristics to consider when writing high-quality unit tests.</string>
+    <string name="fakes_title">Fakes</string>
+
+    <string name="mocks_question">What are Mocks?</string>
+    <string name="mocks_answer">Mocks are classes that have the same interface as their real counterparts, but none of their behavior. Instead, mocks can be configured with stubbed behavior.\n\nStubbing means providing a dummy implementation.\n\nFor example, a function that is returning an integer can be stubbed to always return the value 0.</string>
+    <string name="mocks_title">Mocks</string>
+
+    <string name="room_question">What is Room?</string>
+    <string name="room_answer">Room is a powerful library for working with data on an Android app. It allows developers to easily create and manage their SQL databases.\n\nIt provides an abstraction layer over SQLite, which is incorporated into the Android operating system.\n\nRoom simplifies creating and managing databases, allowing developers to focus on the app logic instead of dealing with the complexities of SQL.\n\nRoom also provides several helpful features such as automatic data migration and easier debugging.</string>
+    <string name="room_title">Room</string>
+
+    <string name="dao_question">What is DAO?</string>
+    <string name="dao_answer">A DAO (Data Access Object) is a design pattern used to abstract away the underlying data access layer from an app.\n\nInstead of using query builders or direct queries to access the app\'s database, the DAO provides an interface to the database so that the app can work with data without having to worry about the implementation details.\n\nThe DAO handles the database connection, query execution, and result set mapping, allowing the app to focus on the business logic and user experience.\n\nFurthermore, since the DAO is responsible for all database access, any changes to the database structure can be made in one place, making the app more maintainable and reducing the risk of errors.</string>
+    <string name="dao_title">DAO</string>
+
+    <string name="lateinit_question">What is lateinit?</string>
+    <string name="lateinit_answer">lateinit is a modifier used with mutable properties (variables) declared with the var keyword.\n\nIt indicates that a property will be initialized at a later point in the code, and it assures the compiler that the property will not be accessed before initialization.\n\nlateinit properties do occupy memory even before they are initialized. Attempting to access a lateinit property before it\'s initialized will result in a lateinit property not initialized exception at runtime.\n\nWhile you can declare lateinit properties without immediate initialization, it\'s important to ensure proper initialization before accessing them to avoid runtime exceptions.\n\nIn summary, lateinit allows you to defer the initialization of properties until a later time, but you must handle initialization carefully to avoid runtime errors.</string>
+    <string name="lateinit_title">lateinit</string>
+
+    <string name="primitives_question">What are Primitive Types?</string>
+    <string name="primitives_answer">In Kotlin, there is no concept of \"primitive types\" in the same way as in some other programming languages, like Java. Kotlin treats all types consistently, and it provides a more unified approach to data types.\n\nKotlin has a set of basic data types that are used for representing numbers, characters, and booleans. These types are part of the Kotlin standard library and are similar to the primitive types found in languages like Java.\n\nHere are some of the basic data types in Kotlin:\n\nInt: Represents 32-bit signed integers.\n\nLong: Represents 64-bit signed integers.\n\nShort: Represents 16-bit signed integers.\n\nByte: Represents 8-bit signed integers.\n\nFloat: Represents 32-bit floating-point numbers.\n\nDouble: Represents 64-bit floating-point numbers.\n\nChar: Represents a single 16-bit Unicode character.\n\nBoolean: Represents a true or false value.\n\nWhile these types are similar in behavior and performance to primitive types, they are implemented as objects in Kotlin. This means you can call methods on them, and use them in collections.\n\nFor example, you can call functions on Int or create a list of Double values.\n\nKotlin\'s approach helps eliminate some of the quirks and inconsistencies associated with primitive types in other languages, making the language more consistent and user-friendly.\n\nSo, while Kotlin does not have \"primitive types\" in the traditional sense, it provides a similar set of basic data types with a more modern and consistent design.</string>
+    <string name="primitives_title">Primitive Types in Kotlin</string>
+    
+    <string name="component_question">What is Component?</string>
+    <string name="component_answer">A component typically refers to a fundamental building block or element of an Android application. Android components are essential parts of your app that have specific roles and life cycles.\n\nThe primary Android components are:\n\nActivity: An Activity is a user interface component that represents a single screen with a user interface. It is used to interact with the user and can be thought of as a window in your application. Activities manage the UI, user input, and can transition between different screens or activities.\n\nFragment: Fragments are smaller components that are often used in combination with activities to create more modular and flexible UIs. They are like parts of an activity that can be combined to create a complete user interface.\n\nService: A Service is a component that performs tasks in the background without a user interface. Services are used for long-running operations, such as playing music, handling network requests, or processing data.\n\nBroadcast Receiver: A Broadcast Receiver is a component that listens for system-wide or app-specific broadcasts. It allows your app to respond to events or messages from other parts of the system or other apps.\n\nContent Provider: A Content Provider is a component that manages and shares data between different parts of your app or with other apps. It provides a structured way to access and modify data, often in the form of a database.\n\nIntent: While not a traditional "component," Intents are a fundamental part of Android app communication. They are used to request actions from other components, launch activities, and pass data between different parts of your app.\n\nThese components work together to create the functionality and user interface of your Android application. Understanding how these components interact and their life cycles is crucial for developing Android apps effectively.</string>
+    <string name="component_title">Component</string>
 </resources>
-
-
