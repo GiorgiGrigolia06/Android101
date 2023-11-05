@@ -159,7 +159,7 @@
     <string name="event_title">Event</string>
 
     <string name="handling_event_question">What it means to handle an event?</string>
-    <string name="handling_event_answer">Your response to an event, executing code or a function, when an event occurs is called handling the event. This kind of a function is known as a callback function.\n\nExamples:\nHandle click or tap by showing a dialogue box.\nScrolling a list by displaying new list items.\nLong press on the home screen to select an icon.</string>
+    <string name="handling_event_answer">Your response to an event, executing code or a function, when an event occurs is called handling the event. This kind of a function is known as a callback function.\n\nExamples:\n\nHandle click or tap by showing a dialogue box.\n\nScrolling a list by displaying new list items.\n\nLong press on the home screen to select an icon.</string>
     <string name="handling_event_title">Handling the Event</string>
     
     <string name="state_question">What is State?</string>
@@ -199,7 +199,7 @@
     <string name="extension_functions_title">Extension Functions</string>
     
     <string name="functional_testing_question">What is Functional Testing?</string>
-    <string name="functional_testing_answer">Functional Testing deals with testing the functional aspects of a software application. It aims at validating and verifying the correctness and completeness of a software application.\n\nThese tests can be either run manually or using automation tools.\n\nThere are three types of Functional Testing:\n\nUnit Testing, Integration Testing, and End-To-End Testing.</string>
+    <string name="functional_testing_answer">Functional Testing deals with testing the functional aspects of a software application. It aims at validating and verifying the correctness and completeness of a software application.\n\nThese tests can be either run manually or using automation tools.\n\nThere are three types of Functional Testing: Unit Testing, Integration Testing, and End-To-End Testing.</string>
     <string name="functional_testing_title">Functional Testing</string>
     
     <string name="non_functional_testing_question">What is Non-Functional Testing?</string>
