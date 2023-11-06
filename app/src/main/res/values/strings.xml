@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Android 101</string>
+    <string name="search_bar_placeholder">Search for topic</string>
 
     <string name="class_question">What is a Class?</string>
     <string name="class_answer">
