@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowRight
@@ -27,6 +28,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.android101.R
@@ -37,10 +39,12 @@ import com.example.android101.ui.theme.Android101Theme
 @Composable
 fun QuestionsScreen(
     items: List<Item>,
-    navigateToContent: (Item) -> Unit
+    navigateToContent: (Item) -> Unit,
+    modifier: Modifier = Modifier
 ) {
     LazyColumn(
         contentPadding = PaddingValues(dimensionResource(id = R.dimen.lazy_column_horizontal_padding)),
+        modifier = modifier
     ) {
         items(items) { item ->
             Question(
@@ -87,8 +91,9 @@ fun Question(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SearchBar(
-    value: String,
-    onValueChange: (String) -> Unit,
+    value: TextFieldValue,
+    onValueChange: (TextFieldValue) -> Unit,
+    onSearch: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     OutlinedTextField(
@@ -103,7 +108,10 @@ fun SearchBar(
         },
         keyboardOptions = KeyboardOptions(
             keyboardType = KeyboardType.Text,
-            imeAction = ImeAction.Go
+            imeAction = ImeAction.Search
+        ),
+        keyboardActions = KeyboardActions(
+            onSearch = { onSearch() }
         ),
         colors = TextFieldDefaults.outlinedTextFieldColors(
             containerColor = MaterialTheme.colorScheme.surface,
@@ -124,7 +132,10 @@ fun SearchBarPreview() {
         Surface(
             color = MaterialTheme.colorScheme.background
         ) {
-            SearchBar(value = "", onValueChange = { })
+            SearchBar(
+                value = TextFieldValue("Search for topic"),
+                onValueChange = { },
+                onSearch = { })
         }
     }
 }
@@ -137,7 +148,7 @@ fun QuestionScreenPreview() {
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background
         ) {
-            QuestionsScreen(appData) { }
+            QuestionsScreen(appData, { })
         }
     }
 }
