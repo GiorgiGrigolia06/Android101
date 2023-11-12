@@ -125,20 +125,20 @@ fun SearchBar(
     )
 }
 
-//@Preview
-//@Composable
-//fun SearchBarPreview() {
-//    Android101Theme(darkTheme = true) {
-//        Surface(
-//            color = MaterialTheme.colorScheme.background
-//        ) {
-//            SearchBar(
-//                value = "Search for topic",
-//                onValueChange = { },
-//                onSearch = { })
-//        }
-//    }
-//}
+@Preview
+@Composable
+fun SearchBarPreview() {
+    Android101Theme(darkTheme = true) {
+        Surface(
+            color = MaterialTheme.colorScheme.background
+        ) {
+            SearchBar(
+                value = TextFieldValue("Search for topic"),
+                onValueChange = { },
+                onSearch = { })
+        }
+    }
+}
 
 @Preview(showBackground = true)
 @Composable
