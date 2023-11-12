@@ -1,6 +1,5 @@
 package com.example.android101.ui
 
-import androidx.compose.ui.text.input.TextFieldValue
 import androidx.lifecycle.ViewModel
 import com.example.android101.data.appData
 import com.example.android101.model.Item
@@ -16,7 +15,7 @@ class AppViewModel : ViewModel() {
             items = appData,
             selectedItem = appData[0],
             isSearching = false,
-            searchInput = TextFieldValue("")
+            searchInput = ""
         )
     )
 
@@ -34,14 +33,14 @@ class AppViewModel : ViewModel() {
         _uiState.update {
             it.copy(
                 isSearching = !_uiState.value.isSearching,
-                searchInput = TextFieldValue("")
+                searchInput = ""
             )
         }
     }
 
-    fun updateSearchInput(input: TextFieldValue) {
-        _uiState.update { uiState ->
-            uiState.copy(
+    fun updateSearchInput(input: String) {
+        _uiState.update {
+            it.copy(
                 searchInput = input
             )
         }

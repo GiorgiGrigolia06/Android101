@@ -31,6 +31,8 @@ import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextRange
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
@@ -73,8 +75,11 @@ fun Android101App(
 
                     if (currentScreen == Destinations.QUESTION && uiState.isSearching)
                         SearchBar(
-                            value = uiState.searchInput,
-                            onValueChange = { viewModel.updateSearchInput(it) },
+                            value = TextFieldValue(
+                                uiState.searchInput,
+                                selection = TextRange(uiState.searchInput.length)
+                            ),
+                            onValueChange = { viewModel.updateSearchInput(it.text) },
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .focusRequester(focusRequester),
@@ -126,10 +131,10 @@ fun Android101App(
         ) {
             composable(route = Destinations.QUESTION.name) {
                 val filteredItems =
-                    if (uiState.searchInput.text.isNotBlank())
+                    if (uiState.searchInput.isNotBlank())
                         uiState.items.filter {
                             stringResource(id = it.question).contains(
-                                uiState.searchInput.text,
+                                uiState.searchInput,
                                 ignoreCase = true
                             )
                         }
