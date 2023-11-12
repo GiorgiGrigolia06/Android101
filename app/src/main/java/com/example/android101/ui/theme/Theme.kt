@@ -108,7 +108,6 @@ fun Android101Theme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
-        content = content,
-        shapes = Shapes
+        content = content
     )
 }
