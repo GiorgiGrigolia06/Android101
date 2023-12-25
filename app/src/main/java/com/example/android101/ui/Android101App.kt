@@ -105,7 +105,6 @@ fun Android101App(
                             Icon(imageVector = Icons.Filled.Search, contentDescription = null)
                         }
 
-
                     if (currentScreen == Destinations.QUESTION && uiState.isSearching) {
                         // Search bar obtains focus with 200MS delay after it's visible.
                         LaunchedEffect(Unit) {
@@ -130,17 +129,12 @@ fun Android101App(
             modifier = Modifier.padding(innerPadding)
         ) {
             composable(route = Destinations.QUESTION.name) {
-                val filteredItems =
-                    if (uiState.searchInput.isNotBlank())
-                        uiState.items.filter {
-                            stringResource(id = it.question).contains(
-                                uiState.searchInput,
-                                ignoreCase = true
-                            )
-                        }
-                    else uiState.items
                 QuestionsScreen(
-                    items = filteredItems,
+                    items = viewModel.getFilteredQuestions(
+                        uiState.items.map {
+                            stringResource(id = it.question)
+                        }
+                    ),
                     navigateToContent = {
                         navController.navigate(route = Destinations.ANSWER.name)
                         viewModel.updateSelectedItem(it)
@@ -148,7 +142,11 @@ fun Android101App(
                     modifier = Modifier.clickable(
                         interactionSource = interactionSource,
                         indication = null
-                    ) { focusManager.clearFocus() }
+                    ) {
+                        focusManager.clearFocus()
+                        if (uiState.searchInput.isBlank())
+                            viewModel.toggleSearchOnQuestionsScreenClick()
+                    }
                 )
             }
             composable(route = Destinations.ANSWER.name) {

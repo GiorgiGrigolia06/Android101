@@ -38,11 +38,30 @@ class AppViewModel : ViewModel() {
         }
     }
 
+    fun toggleSearchOnQuestionsScreenClick() {
+        _uiState.update {
+            it.copy(
+                isSearching = false
+            )
+        }
+    }
+
     fun updateSearchInput(input: String) {
         _uiState.update {
             it.copy(
                 searchInput = input
             )
         }
+    }
+
+    fun getFilteredQuestions(questionStrings: List<String>): List<Item> {
+        return if (_uiState.value.searchInput.isNotBlank())
+            _uiState.value.items.filterIndexed { index, _ ->
+                questionStrings.getOrNull(index)?.contains(
+                    _uiState.value.searchInput.trim(),
+                    ignoreCase = true
+                ) == true
+            }
+        else _uiState.value.items
     }
 }
